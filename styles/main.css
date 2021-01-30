@@ -1,0 +1,81 @@
+:root {
+    --vermelho:#e50914;
+    --preta:#141414;
+    --branco:#e6e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 10px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+header nav a:hover {
+    color: #ffff;
+    margin-right: 10px;
+    font-weight: 600;
+    
+}
+
+
+/* ------- Filme principal ------ */
+
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0, 0, 0, 0.5)20%, rgba(2,75,80,.50)50%), url('../asserts/soul.jpg');
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao-sinopse{
+    margin-bottom: 36px;
+}
+
+.container .titulo{
+    font-size: 50px;
+    
+}
+  
+
+
+/* header, div, 
+a, p, h1, h2, 
+footer, menu, button {
+    border: 1px solid white;
+} */
+
