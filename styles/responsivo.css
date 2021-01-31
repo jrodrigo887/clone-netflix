@@ -1,0 +1,39 @@
+@media screen and (max-width: 700px){
+
+    header .container{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        
+    }
+
+    header .container nav{
+        margin: 5px 0 10px;
+    }
+
+    .botao{
+        width: 45%;
+        height: 50px;
+        padding: 3px;
+        margin-top: 5px;
+
+    }
+
+    .btn-group{
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .descricao-sinopse{
+        width: 50%;
+    }
+
+    .btn-group{
+        margin-top: -30px;
+    }
+
+}

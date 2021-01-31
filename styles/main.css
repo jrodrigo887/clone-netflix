@@ -63,19 +63,55 @@ header nav a:hover {
 }
 
 .filme-principal .descricao-sinopse{
+    margin-top: 12px;
     margin-bottom: 36px;
 }
 
 .container .titulo{
-    font-size: 50px;
-    
+    margin-top: 15%;
+    font-size: 50px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-  
+
+/* Tentei traduzir o efeito do botão do github, em modo DARK */
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: 1px solid rgba(255,255,255,.1);
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
 
 
-/* header, div, 
-a, p, h1, h2, 
-footer, menu, button {
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    /* color: black; */
+    box-shadow: inset 0px 1px 8em rgba(255, 255, 255, 0.2);;
     border: 1px solid white;
-} */
+   
+}
+
+.botao .fas{
+    margin-right: 8px;
+}
+
+.filme-principal .container{
+    width: 65%;
+    margin-left: 20px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    border: 1px solid white;
+    margin-top: 1%;
+}
 
