@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" context="width-device-width, initial-scale=1.0">
+
     <!-- Estilos -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/responsivo.css">
@@ -10,8 +11,13 @@
     <!-- Metadados Carousel -->
     <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css"></link>
     <link rel="stylesheet" href="styles/owl/owl.carousel.min.css"></link>
+    <script src="js/buttos.js"></script>
+
+    <script src="js/index.js"></script>
+
+
     
- <title>Net Clone</title>
+    <title>Net Clone</title>
   </head>
   <body>
     <header>
@@ -23,20 +29,13 @@
           <a href="#">Filmes</a>
           <a href="#">Documentários</a>
         </nav>
-        <!-- <div class="btn-container">
-          <menu>
-            <button type="button">
-              Entrar
-            </button>
-          </menu>
-        </div> -->
       </div>
     </header>
 
     <main>
       <div class="filme-principal">
         <div class="container">
-          <!-- <h5 class="marca-netflix">NETFLIX <SPAN>ORIGINAL</SPAN></h5> -->
+        
           <h1 class="titulo">Soul (2020)</h1>
           <p class="descricao-sinopse">
             Joe Gardner é um professor de música de ensino 
@@ -48,19 +47,23 @@
             aprendendo sobre si, para aprender o que é necessário para retomar sua vida.
           </p>
           <div class="btn-group">
-            <button role="button" class="botao">
+            <button role="button" class="botao" onclick="clickAssistirFilme()">
               <i class="fas fa-play"></i>
               ASSISTIR AGORA
             </button>
-            <button role="button" class="botao">
+            <button role="button" class="botao" onclick="clickTrailer()">
               <i class="fas fa-info-circle"></i>
-              TRAILLER
+              TRAILER
             </button>
           </div>
 
         </div>
       </div>
     </main>
+
+    <!-- Exibir trailer quando clicar no botão trailer -->
+    <div id="out-trailer">
+    </div>
 
     <div class="carrosel-filmes">
       <div class="owl-carousel owl-theme">
@@ -105,14 +108,23 @@
       </div>
     </div>
 
+    <div id="out-trailer">
+    </div>
+
     <footer>
-      <p>Desenvolvido por <span>Rodrigo Silva</span> </p>
+      <p>Desenvolvido por<span>
+        Rodrigo Silva
+        <i class="fas fa-heart"></i> 
+      </span> </p>
     </footer>
   
-    <script src="js/index.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+   
+
+    
+
 
 
        <!-- Fonte Awesome -->
